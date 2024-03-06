@@ -8,14 +8,17 @@ checkBtn?.addEventListener("click", () => {
   if (inputValue.value.length < 1) {
     result.innerHTML = "Please enter a word";
   } else {
-    const input = inputValue.value;
+    const input = inputValue.value.toLowerCase();
 
     const toCheck = input.split("").reverse().join("");
+    console.log(toCheck);
+    console.log(input);
     if (toCheck === input) {
-      result.innerHTML = `${input} is an example of palindrome word`;
+      result.innerHTML = `${inputValue.value} is an example of palindrome word`;
     } else {
-      result.innerHTML = `${input} is not an example of palindrome word`;
+      result.innerHTML = `${inputValue.value} is not an example of palindrome word`;
     }
+
     inputValue.value = "";
   }
 });
