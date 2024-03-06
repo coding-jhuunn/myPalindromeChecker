@@ -1,11 +1,81 @@
+:root {
+  --primary: #1f1717;
+  --secondary: #ce5a67;
+  --tertiary: #f4bf96;
+  --default: #fcf5ed;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
-
+a {
+  text-decoration: none;
+  color: var(--default);
+}
 body {
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: var(--default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--default);
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  border-shadow: 1px;
+}
+.title-div {
+  margin-top: 10px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+
+.input-div {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+#input {
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+#check-btn {
+  width: 25%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+#check-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: var(--secondary);
+}
+.credits-div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
