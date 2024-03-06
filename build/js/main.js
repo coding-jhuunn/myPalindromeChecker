@@ -3,8 +3,8 @@ const inputValue = document.getElementById("input");
 const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 checkBtn === null || checkBtn === void 0 ? void 0 : checkBtn.addEventListener("click", () => {
-    if (inputValue.value.length < 1) {
-        result.innerHTML = "Please enter a word";
+    if (inputValue.value.length <= 2) {
+        result.innerHTML = "Please enter a word with more than 2 letters";
     }
     else {
         const input = inputValue.value.toLowerCase();

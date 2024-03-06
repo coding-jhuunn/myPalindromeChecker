@@ -5,8 +5,8 @@ const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result") as HTMLInputElement;
 
 checkBtn?.addEventListener("click", () => {
-  if (inputValue.value.length < 1) {
-    result.innerHTML = "Please enter a word";
+  if (inputValue.value.length <= 2) {
+    result.innerHTML = "Please enter a word with more than 2 letters";
   } else {
     const input = inputValue.value.toLowerCase();
 
